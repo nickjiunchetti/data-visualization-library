@@ -1,9 +1,6 @@
 // components/SearchInput.js
 'use client' // Ensure this is a client component
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-
 export default function SearchInput() {
   return (
     <div className='w-full relative mb-5'>
