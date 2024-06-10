@@ -6,7 +6,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export default function SearchInput() {
   return (
-    <div className='w-full relative mb-3'>
+    <div className='w-full relative mb-5'>
       <input
         type='text'
         placeholder='Type to search...'
