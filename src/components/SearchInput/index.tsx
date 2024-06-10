@@ -1,6 +1,4 @@
-// components/SearchInput.js
-'use client' // Ensure this is a client component
-
+'use client'
 export default function SearchInput() {
   return (
     <div className='w-full relative mb-5'>
