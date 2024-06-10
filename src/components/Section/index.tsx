@@ -1,5 +1,5 @@
 import Item from '../Item'
-import { itemType } from '@/app/page'
+import { itemType, itensDataType } from '@/app/page'
 export default function Section({
   title,
   description,
@@ -7,7 +7,7 @@ export default function Section({
 }: {
   title: string
   description: string
-  itens: itemType[]
+  itens: itensDataType
 }) {
   const featured = title === 'Featured'
   return (

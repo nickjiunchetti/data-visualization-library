@@ -1,8 +1,27 @@
 'use client'
-export default function SearchInput() {
+
+import { itensDataType } from '@/app/page'
+import { useEffect, useState } from 'react'
+
+export default function SearchInput({
+  itensData,
+  setFilteredItens,
+}: {
+  itensData: itensDataType
+  filteredItens: itensDataType
+  setFilteredItens: Function
+}) {
+  const [searchValue, setSearchValue] = useState('')
+
+  useEffect(() => {
+    searchValue === '' ? setFilteredItens(itensData) : setFilteredItens([])
+  }, [itensData, searchValue, setFilteredItens])
+
   return (
     <div className='w-full relative mb-5'>
       <input
+        value={searchValue}
+        onChange={(event) => setSearchValue(event.target.value)}
         type='text'
         placeholder='Type to search...'
         className='p-1 w-full pl-10 border rounded-lg shadow-sm focus:outline-none focus:border-gray-300 text-sm'
