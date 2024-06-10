@@ -1,10 +1,7 @@
-import Image from 'next/image'
 import SearchBar from '../components/SearchInput'
 import TabBar from '../components/Tab'
 import SectionTitle from '../components/Section'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 export default function Home() {
   return (
     <main className='h-full p-2'>
@@ -23,9 +20,9 @@ export default function Home() {
           title='Trending'
           description='Most popular by community'
         />
-        <div className='flex w-full text-white-700'>
-          <FontAwesomeIcon icon={faSearch} className='text-gray-400' />
-          <button className=''>Request</button>
+        <div className='flex w-full p-2 items-center gap-2 justify-center  text-white-700 bg-gray-500 text-gray-200 rounded'>
+          <span className='material-symbols-outlined'>box_add</span>
+          <button className=''>Request Asset</button>
         </div>
       </div>
     </main>

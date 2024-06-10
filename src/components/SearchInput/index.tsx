@@ -13,7 +13,7 @@ export default function SearchInput() {
         className='p-1 w-full pl-10 border rounded-lg shadow-sm focus:outline-none focus:border-gray-300 text-sm'
       />
       <div className='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
-        <FontAwesomeIcon icon={faSearch} className='text-gray-400' />
+        <span className='material-symbols-outlined text-gray-400'>search</span>
       </div>
     </div>
   )
