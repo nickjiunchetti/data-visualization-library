@@ -2,7 +2,17 @@ import SearchBar from '../components/SearchInput'
 import TabBar from '../components/Tab'
 import SectionTitle from '../components/Section'
 
+const item = {
+  name: 'Item Name',
+  description: 'Short description of the item goes nicely here.',
+  date: '06/27/2024' as string | undefined,
+}
+
+export type itemType = typeof item
+
 export default function Home() {
+  const data = [{ ...item, date: undefined }, item, item, item]
+
   return (
     <main className='h-full p-2'>
       <div className='min-h-full bg-gray-50 flex flex-col items-center p-3'>
@@ -15,10 +25,12 @@ export default function Home() {
         <SectionTitle
           title='Featured'
           description='Curated top picks from this week'
+          itens={data}
         />
         <SectionTitle
           title='Trending'
           description='Most popular by community'
+          itens={data}
         />
         <div className='flex w-full p-2 items-center gap-2 justify-center  text-white-700 bg-gray-500 text-gray-200 rounded'>
           <span className='material-symbols-outlined'>box_add</span>

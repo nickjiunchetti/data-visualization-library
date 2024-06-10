@@ -1,6 +1,16 @@
 import Image from 'next/image'
 
-export default function Item({ featured }: { featured?: boolean }) {
+export default function Item({
+  name,
+  description,
+  date,
+  featured,
+}: {
+  name: string
+  description: string
+  date?: string
+  featured?: boolean
+}) {
   const containerClass = featured && 'bg-white rounded border border-gray-100'
 
   return (
@@ -14,11 +24,9 @@ export default function Item({ featured }: { featured?: boolean }) {
         priority
       />
       <div className='flex flex-col gap-1'>
-        <p className='font-semibold'>Item Name</p>
-        <p className='text-sm'>
-          Short description of the item goes nicely here.
-        </p>
-        <p className='text-xs text-gray-300'>06/27/2024</p>
+        <p className='font-semibold'>{name}</p>
+        <p className='text-sm'>{description}</p>
+        <p className='text-xs text-gray-400'>{date}</p>
       </div>
     </div>
   )
