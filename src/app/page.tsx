@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className='font-extrabold text-3xl md:text-5xl mb-4 text-center'>
             Library
           </h1>
-          <h2 className='text-xs md:text-lg mb-4 text-center'>
+          <h2 className='text-xs md:text-lg mb-10 text-center'>
             Browse for assets needed to report and present data analysis
           </h2>
           <SearchBar

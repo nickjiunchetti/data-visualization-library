@@ -22,7 +22,7 @@ export default function Item({
       onClick={() => setShowModal(true)}
     >
       <Image
-        className='w-1/3'
+        className='w-1/3 bg-gray-100 px-4 rounded'
         src='/next.svg'
         alt='Next.js Logo'
         width={180}
