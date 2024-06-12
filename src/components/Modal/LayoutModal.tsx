@@ -3,6 +3,9 @@ import React from 'react'
 import Tag from '../Tag'
 import { ModalType } from '.'
 import BaseModal from '.'
+import { AssetDescription, ModalTitle } from './components'
+
+const questionsMock = ['Question 1', 'Question 2', 'Question 3', 'Question 4']
 
 export default function LayoutModal({ show, setShow }: ModalType) {
   return (
@@ -11,15 +14,8 @@ export default function LayoutModal({ show, setShow }: ModalType) {
         <div className='w-12 h-12 mx-auto bg-gray-50 text-gray-400 rounded flex items-center justify-center'>
           <span className='material-symbols-outlined'>view_module</span>
         </div>
-        <p className='flex justify-center gap-2 mt-3 text-xl font-bold items-center'>
-          INTES{' '}
-          <span className='font-normal text-xs text-gray-500 bg-gray-50 p-1 rounded'>
-            Layout
-          </span>
-        </p>
-        <p className='mt-1 text-xs text-gray-400'>
-          Descriptive name of the Layout
-        </p>
+        <ModalTitle>INTE</ModalTitle>
+        <AssetDescription>Descriptive name of the Layout</AssetDescription>
         <p className='mt-4 text-sm'>
           Those options are already baked in with this model shoot me an email
           clear blue water but we need distributors to evangelize the new line
@@ -61,14 +57,14 @@ export default function LayoutModal({ show, setShow }: ModalType) {
       <div className='mt-6'>
         <p className='text-lg font-semibold'>Business Questions</p>
         <div className='grid grid-cols-2 gap-4 mt-4'>
-          {[1, 2, 3, 4].map((value, index) => (
+          {questionsMock.map((value, index) => (
             <div
               key={index}
               className={`px-4 py-2 rounded-md  ${
                 index === 0 && 'bg-gray-100'
               }`}
             >
-              <p className='font-semibold'>Question {index + 1}</p>
+              <p className='font-semibold'>{value}</p>
               <p className='text-sm text-gray-600 md:w-4/5'>
                 Short description of the item goes nicely here.
               </p>
