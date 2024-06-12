@@ -48,7 +48,7 @@ export default function TabBar({
           <p className='text-gray-500 text-center'>
             You don&apos;t have permission to see this assets.
           </p>
-          <button className='flex p-3 items-center gap-2 text-sm bg-gray-500 text-gray-50 rounded-md'>
+          <button className='w-full md:w-autoflex p-3 items-center gap-2 text-sm bg-gray-500 text-gray-50 rounded-md mb-4'>
             <span className='material-symbols-outlined'>box_add</span>
             Request Permission
           </button>
