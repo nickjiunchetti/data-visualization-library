@@ -49,7 +49,6 @@ export default function Home() {
             />
           </>
         )}
-
         <button className='flex w-full p-2 items-center gap-2 justify-center  text-white-700 bg-gray-500 text-gray-200 rounded'>
           <span className='material-symbols-outlined'>box_add</span>
           Request Asset

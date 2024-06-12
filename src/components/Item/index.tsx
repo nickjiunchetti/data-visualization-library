@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Modal from '../Modal'
+import { useState } from 'react'
 
 export default function Item({
   name,
@@ -11,10 +13,16 @@ export default function Item({
   date?: string
   featured?: boolean
 }) {
+  const [showModal, setShowModal] = useState(false)
   const containerClass = featured && 'bg-white rounded border border-gray-100'
 
   return (
-    <div className={containerClass + ' flex p-4 w-full md:w-1/2 gap-4'}>
+    <div
+      className={
+        containerClass + ' flex p-4 w-full md:w-1/2 gap-4 cursor-pointer'
+      }
+      onClick={() => setShowModal(true)}
+    >
       <Image
         className='w-1/3'
         src='/next.svg'
@@ -28,6 +36,9 @@ export default function Item({
         <p className='text-sm'>{description}</p>
         <p className='text-xs text-gray-400'>{date}</p>
       </div>
+      <Modal show={showModal} setShow={setShowModal}>
+        modal content
+      </Modal>
     </div>
   )
 }
