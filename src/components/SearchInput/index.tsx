@@ -7,7 +7,6 @@ export default function SearchInput({
   setFilteredItens,
 }: {
   itensData: itensDataType
-  filteredItens: itensDataType
   setFilteredItens: Function
 }) {
   const [searchValue, setSearchValue] = useState('')
