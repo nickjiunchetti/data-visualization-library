@@ -11,10 +11,10 @@ export default function LayoutModal({ show, setShow }: ModalType) {
   return (
     <BaseModal show={show} setShow={setShow}>
       <div className='text-center'>
-        <div className='w-12 h-12 mx-auto bg-gray-50 text-gray-400 rounded flex items-center justify-center'>
+        <div className='w-10 h-10 mx-auto bg-gray-50 text-gray-400 rounded flex items-center justify-center'>
           <span className='material-symbols-outlined'>view_module</span>
         </div>
-        <ModalTitle>INTE</ModalTitle>
+        <ModalTitle>INTES</ModalTitle>
         <AssetDescription>Descriptive name of the Layout</AssetDescription>
         <p className='mt-4 text-sm'>
           Those options are already baked in with this model shoot me an email
@@ -28,14 +28,14 @@ export default function LayoutModal({ show, setShow }: ModalType) {
         </div>
       </div>
       <div className='mt-6 grid grid-cols-2 md:grid-cols-4 text-center font-semibold border-gray-300'>
-        <div className='border-r-2 border-b md:border-b-0 p-2 '>
+        <div className='border-r-2 border-b-2 md:border-b-0 p-2 '>
           <p className='text-sm text-gray-500 flex items-center justify-center gap-1'>
             Used
             <span className='material-symbols-outlined text-sm'>info</span>
           </p>
           <p>2485</p>
         </div>
-        <div className='border-b md:border-b-0 md:border-r-2 p-2'>
+        <div className='border-b-2 md:border-b-0 md:border-r-2 p-2'>
           <p className='text-sm text-gray-500'>Type</p>
           <p className='font-semibold'>Universal</p>
         </div>

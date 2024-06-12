@@ -1,6 +1,6 @@
 export function ModalTitle({ children }: { children: React.ReactNode }) {
   return (
-    <p className='flex justify-center gap-2 mt-3 text-xl font-bold items-center'>
+    <p className='flex justify-center gap-2 mt-3 text-3xl font-semibold items-center'>
       {children}
       <span className='font-normal text-xs text-gray-500 bg-gray-50 p-1 rounded'>
         Layout
