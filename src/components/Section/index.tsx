@@ -14,7 +14,7 @@ export default function Section({
     <div className='flex flex-col w-full mb-5'>
       <h3 className='font-bold text-xl'>{title}</h3>
       <p className='text-sm text-gray-500 mb-5'>{description}</p>
-      <div className='flex flex-col md:flex-row gap-3 p-2'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
         {itens.map((item, index) => (
           <Item
             key={index}
