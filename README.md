@@ -34,3 +34,15 @@ I also mocked data directly on the code, as I assumed this delivery is more clos
 - Finish the Tab component
 - Use the existing components to build the other modals
 - Add a request permission form to the request permission button
+
+![image](https://github.com/nickjiunchetti/data-visualization-library/assets/47458202/caf8f5cf-c284-4379-b483-934c4465fae3)
+
+![image](https://github.com/nickjiunchetti/data-visualization-library/assets/47458202/ebf13f4c-c85b-4901-89e3-fcfdfad17c96)
+
+![image](https://github.com/nickjiunchetti/data-visualization-library/assets/47458202/e3671794-b4eb-4cd9-aa15-0b59eae964f7)
+
+![image](https://github.com/nickjiunchetti/data-visualization-library/assets/47458202/0a94fbd4-68ab-4dd9-97e1-467b8a453882)
+
+
+
+
