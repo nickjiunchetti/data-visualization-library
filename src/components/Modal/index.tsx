@@ -17,7 +17,7 @@ export default function BaseModal({ show, setShow, children }: ModalType) {
         }}
       >
         <div
-          className='w-screen md:w-2/5  bg-white p-4 rounded shadow-lg relative cursor-default'
+          className='w-screen md:w-2/5  bg-white p-8 pb-4 rounded shadow-lg relative cursor-default'
           onClick={(e) => e.stopPropagation()}
         >
           {children}
