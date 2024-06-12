@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Modal from '../Modal'
 import { useState } from 'react'
+import LayoutModal from '../Modal/LayoutModal'
 
 export default function Item({
   name,
@@ -18,9 +18,7 @@ export default function Item({
 
   return (
     <div
-      className={
-        containerClass + ' flex p-4 w-full md:w-1/2 gap-4 cursor-pointer'
-      }
+      className={containerClass + ' flex p-4 w-full gap-4 cursor-pointer'}
       onClick={() => setShowModal(true)}
     >
       <Image
@@ -36,9 +34,7 @@ export default function Item({
         <p className='text-sm'>{description}</p>
         <p className='text-xs text-gray-400'>{date}</p>
       </div>
-      <Modal show={showModal} setShow={setShowModal}>
-        modal content
-      </Modal>
+      <LayoutModal show={showModal} setShow={setShowModal} />
     </div>
   )
 }
